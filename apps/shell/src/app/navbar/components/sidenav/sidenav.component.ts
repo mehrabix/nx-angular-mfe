@@ -5,13 +5,9 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
   templateUrl: './sidenav.component.html',
   styleUrls: ['./sidenav.component.scss'],
 })
-export class SidenavComponent implements OnInit {
+export class SidenavComponent  {
   @Output() sidenavClose = new EventEmitter();
 
-  constructor() { }
-
-  ngOnInit() {
-  }
 
   public onSidenavClose = () => {
     this.sidenavClose.emit();

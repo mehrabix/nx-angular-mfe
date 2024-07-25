@@ -7,7 +7,6 @@ import { NxWelcomeComponent } from './nx-welcome.component';
 import { RouterModule } from '@angular/router';
 import { appRoutes } from './app.routes';
 import { NavbarModule } from './navbar/navbar.module';
-import { MatSidenavModule } from '@angular/material/sidenav';
 
 @NgModule({
   declarations: [AppComponent, NxWelcomeComponent],
@@ -15,7 +14,6 @@ import { MatSidenavModule } from '@angular/material/sidenav';
     BrowserModule,
     BrowserAnimationsModule,
     NavbarModule,
-    MatSidenavModule, // <-- Add this line because of app.component.html
     RouterModule.forRoot(appRoutes, { initialNavigation: 'enabledBlocking' }),
   ],
   providers: [],
