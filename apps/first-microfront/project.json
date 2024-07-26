@@ -10,6 +10,7 @@
       "executor": "@nx/angular:webpack-browser",
       "outputs": ["{options.outputPath}"],
       "options": {
+        "preserveSymlinks":true,
         "outputPath": "dist/apps/first-microfront",
         "index": "apps/first-microfront/src/index.html",
         "main": "apps/first-microfront/src/main.ts",
